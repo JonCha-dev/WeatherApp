@@ -14,6 +14,10 @@
 		89F39E682A48A48E00F7E3B7 /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39E672A48A48E00F7E3B7 /* WeatherAppTests.swift */; };
 		89F39E722A48A48E00F7E3B7 /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39E712A48A48E00F7E3B7 /* WeatherAppUITests.swift */; };
 		89F39E742A48A48E00F7E3B7 /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39E732A48A48E00F7E3B7 /* WeatherAppUITestsLaunchTests.swift */; };
+		89F39E812A48A67100F7E3B7 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39E802A48A67100F7E3B7 /* WeatherViewModel.swift */; };
+		89F39E832A48A72100F7E3B7 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39E822A48A72100F7E3B7 /* WeatherService.swift */; };
+		89F39E852A48A7A000F7E3B7 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39E842A48A7A000F7E3B7 /* WeatherResponse.swift */; };
+		89F39E872A48AB7400F7E3B7 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F39E862A48AB7400F7E3B7 /* WeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8967856D2A4CE5FD00FE421B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		89F39E532A48A48C00F7E3B7 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F39E562A48A48C00F7E3B7 /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
 		89F39E582A48A48C00F7E3B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,10 @@
 		89F39E6D2A48A48E00F7E3B7 /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F39E712A48A48E00F7E3B7 /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		89F39E732A48A48E00F7E3B7 /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89F39E802A48A67100F7E3B7 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		89F39E822A48A72100F7E3B7 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		89F39E842A48A7A000F7E3B7 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		89F39E862A48AB7400F7E3B7 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +103,15 @@
 		89F39E552A48A48C00F7E3B7 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				8967856D2A4CE5FD00FE421B /* Info.plist */,
 				89F39E562A48A48C00F7E3B7 /* WeatherAppApp.swift */,
 				89F39E582A48A48C00F7E3B7 /* ContentView.swift */,
+				89F39E862A48AB7400F7E3B7 /* WeatherCell.swift */,
 				89F39E5A2A48A48E00F7E3B7 /* Assets.xcassets */,
 				89F39E5C2A48A48E00F7E3B7 /* Preview Content */,
+				89F39E802A48A67100F7E3B7 /* WeatherViewModel.swift */,
+				89F39E822A48A72100F7E3B7 /* WeatherService.swift */,
+				89F39E842A48A7A000F7E3B7 /* WeatherResponse.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -257,7 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F39E832A48A72100F7E3B7 /* WeatherService.swift in Sources */,
+				89F39E852A48A7A000F7E3B7 /* WeatherResponse.swift in Sources */,
+				89F39E872A48AB7400F7E3B7 /* WeatherCell.swift in Sources */,
 				89F39E592A48A48C00F7E3B7 /* ContentView.swift in Sources */,
+				89F39E812A48A67100F7E3B7 /* WeatherViewModel.swift in Sources */,
 				89F39E572A48A48C00F7E3B7 /* WeatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,7 +438,7 @@
 				DEVELOPMENT_TEAM = H3LNG8S38M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -430,7 +448,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = joncha.WeatherApp;
+				PRODUCT_BUNDLE_IDENTIFIER = joncha.myweatherapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -449,7 +467,7 @@
 				DEVELOPMENT_TEAM = H3LNG8S38M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -459,7 +477,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = joncha.WeatherApp;
+				PRODUCT_BUNDLE_IDENTIFIER = joncha.myweatherapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
